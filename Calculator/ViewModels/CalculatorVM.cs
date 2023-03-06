@@ -11,7 +11,7 @@ using System.Windows.Controls;
 
 namespace Calculator.ViewModels
 {
-    public class CalculatorVM: ObservableObject
+    public partial class CalculatorVM: ObservableObject
     {
 
         [ObservableProperty]
@@ -24,7 +24,7 @@ namespace Calculator.ViewModels
         private Label resultLabel;
 
 
-
+            
         [RelayCommand]
         public void CalculateAndSave()
         {
