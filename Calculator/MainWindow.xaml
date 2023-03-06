@@ -98,7 +98,7 @@
                 Grid.Row="3"
                 Grid.Column="3"/>
         <Button x:Name="oneButton"
-                Command="{Binding CalculateAndSave}"
+                Command="{Binding CalculateAndSaveCommand}"
                 Style="{StaticResource numberButtonsStyle}"
                 Content="1"
                 Grid.Row="4"/>
