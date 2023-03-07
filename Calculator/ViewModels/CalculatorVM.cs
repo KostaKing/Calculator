@@ -55,28 +55,28 @@ namespace Calculator.ViewModels
 
 
 
-        //[RelayCommand]
-        //public void NumbercClicked(int number)
-        //{
-        //    var selectedNumber = number switch
-        //    {
-        //         1 => ButtonOne,
-        //         2=> ButtonTwo,
-        //         3=> ButtonThree,
-        //         4=> ButtonFour,
-        //         5=> ButtonFive,
-        //         6=> ButtonSix,
-        //         7=> ButtonSeven,
-        //         8=> ButtonEight,
-        //         9=> ButtonNine,
-                 
-        //    } ;
-        //    ClickedNumber = selectedNumber;
-        //    if (ClickedNumber == 0) Result = 0;
-        //    else Result = Result + selectedNumber;
+        [RelayCommand]
+        public void NumbercClicked(int number)
+        {
+            var selectedNumber = number switch
+            {
+                1 => ButtonOne,
+                2 => ButtonTwo,
+                3 => ButtonThree,
+                4 => ButtonFour,
+                5 => ButtonFive,
+                6 => ButtonSix,
+                7 => ButtonSeven,
+                8 => ButtonEight,
+                9 => ButtonNine,
+
+            };
+            ClickedNumber = selectedNumber;
+            if (ClickedNumber == 0) Result = 0;
+            else Result = Result + selectedNumber;
 
 
-        //}
+        }
 
 
         [RelayCommand]
