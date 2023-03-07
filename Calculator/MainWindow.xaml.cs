@@ -111,6 +111,11 @@ namespace Calculator
             }
         }
 
+        private void oneButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
             int selectedValue = 0;

@@ -7,9 +7,6 @@
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
         Title="MainWindow" Height="525" Width="350">
-    <Window.DataContext>
-        <VM:CalculatorVM/>
-    </Window.DataContext>
 
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
@@ -98,10 +95,11 @@
                 Grid.Row="3"
                 Grid.Column="3"/>
         <Button x:Name="oneButton"
-                Command="{Binding CalculateAndSaveCommand}"
+                Command="{Binding NumbercClickedCommand}"
+                CommandParameter="{Binding ButtonOne}"
                 Style="{StaticResource numberButtonsStyle}"
                 Content="1"
-                Grid.Row="4"/>
+                Grid.Row="4" Click="oneButton_Click"/>
         <Button x:Name="twoButton"
                 Command="{Binding }"
                 Click="NumberButton_Click"
